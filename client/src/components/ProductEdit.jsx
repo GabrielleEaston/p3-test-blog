@@ -54,7 +54,7 @@ class ProductEdit extends Component {
             <Layout user={this.props.user}>
                 <div className="product-edit">
                     <div className="image-container">
-                        <img className="edit-product-image" src={product.imgURL} alt={product.name} />
+                        <img className="edit-product-image" src={product.imgURL} alt={product.title} />
                         <form onSubmit={this.handleSubmit}>
                             <input
                                 className="edit-input-image-link"
@@ -69,27 +69,20 @@ class ProductEdit extends Component {
                     <form className="edit-form" onSubmit={this.handleSubmit}>
                         <input
                             className="input-name"
-                            placeholder='Name'
-                            value={product.name}
+                            placeholder='Title'
+                            value={product.title}
                             name='name'
                             required
                             autoFocus
                             onChange={this.handleChange}
                         />
-                        <input
-                            className="input-price"
-                            placeholder='Price'
-                            value={product.price}
-                            name='price'
-                            required
-                            onChange={this.handleChange}
-                        />
+                       
                         <textarea
                             className="textarea-description"
                             rows={10}
                             cols={78}
-                            placeholder='Description'
-                            value={product.description}
+                            placeholder='Post'
+                            value={product.text}
                             name='description'
                             required
                             onChange={this.handleChange}
