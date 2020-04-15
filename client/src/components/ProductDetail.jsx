@@ -9,9 +9,9 @@ class ProductDetail extends Component {
         super(props)
         this.state = {
             product: {
-                name: '',
-                description: '',
-                imgURL: ''
+              title: '',
+              text: '',
+              imgURL: ''
             }
         }
     }

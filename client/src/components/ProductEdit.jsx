@@ -9,10 +9,9 @@ class ProductEdit extends Component {
         super(props)
         this.state = {
             product: {
-                name: '',
-                description: '',
-                imgURL: '',
-                price: ''
+              title: '',
+              text: '',
+              imgURL: ''
             },
             updated: false
         }
@@ -71,7 +70,7 @@ class ProductEdit extends Component {
                             className="input-name"
                             placeholder='Title'
                             value={product.title}
-                            name='name'
+                            name='title'
                             required
                             autoFocus
                             onChange={this.handleChange}
@@ -83,7 +82,7 @@ class ProductEdit extends Component {
                             cols={78}
                             placeholder='Post'
                             value={product.text}
-                            name='description'
+                            name='text'
                             required
                             onChange={this.handleChange}
                         />
