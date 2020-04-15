@@ -9,10 +9,10 @@ class ProductCreate extends Component {
         super()
         this.state = {
             product: {
-                name: '',
-                description: '',
+                title: '',
                 imgURL: '',
-                price: ''
+                text: '',
+               
             },
             created: false
         }
